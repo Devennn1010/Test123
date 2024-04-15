@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Calling</title>
+    <link rel="stylesheet" href="styles_VID.css">
+</head>
+<body>
+    <h1>Real Time Video Conferencing Translation</h1>
+    <div>
+        <p>Meeting ID: <span id="callerId"></span></p>
+        <video id="Local_Video" autoplay playsinline></video>
+        <video id="Remote_Video" autoplay playsinline></video>
+    </div>
+    <div>
+        <button id="Begin_Call">Start Call</button>
+        <button id="End_Call_Button">End Call</button>
+        <button id="Mute_Button">Mute Mic</button>
+        <button id="Camera_Button">Camera</button>
+        <button id="Translate_Button">Translate</button>
+    </div>
+    <div>
+        <label for="Source_Language">Speaking in:</label>
+        <select id="Source_Language">
+            <option value="en">English</option>
+            <option value="bn">Bengali </option>
+            <option value="fil">Filipino </option>
+            <option value="hi">Hindi </option>
+            <option value="id">Indonesian </option>
+            <option value="ja">Japanese </option>
+            <option value="ms">Malay </option>
+            <option value="zh-CN">Chinese (s) </option>
+            <option value="zh-TW">Chinese (t) </option>
+            <option value="ta">Tamil </option>
+            <option value="fr">French </option>
+        </select>
+    </div>
+    <div>
+        <label for="Target_Language">Translate to:</label>
+        <select id="Target_Language">
+        <option value="en">English</option>
+         <option value="bn">Bengali </option>
+         <option value="fil">Filipino </option>
+         <option value="hi">Hindi </option>
+         <option value="id">Indonesian </option>
+         <option value="ja">Japanese </option>
+         <option value="ms">Malay </option>
+         <option value="zh-CN">Chinese (s) </option>
+         <option value="zh-TW">Chinese (t) </option>
+         <option value="ta">Tamil </option>
+         <option value="fr">French </option>
+        </select>
+    </div>
+    <div id="chat-container">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@1.3.2/dist/peerjs.min.js"></script>
+    <script src="app_VID.js"></script>
+    </script>
+</body>
+</html>

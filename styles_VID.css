@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 400px;
+    height: 300px;
+    border: 3px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    background-color: rgb(94, 182, 250);
+    border: 3px solid black;
+}
+
+#chat-container {
+    width: 500px;
+    height: 350px;
+    border: 3px solid black;
+    overflow-y: scroll;
+    margin: 20px auto; /* Modify this to manipulate the location of the box*/
+    padding: 10px;
+}
+
+.message {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #b0caef;
+    border-radius: 5px;
+}
+
+#Translate_Button.recognizing {
+    background-color: green;
+    color: white;
+}
